@@ -256,7 +256,7 @@ function getPfString(paused)
             {
 		//Modified for Murder Mystery
                 if (c=='O') str+= "<span class=violetHighlightTwo>"+c+"</span>";
-                if (c=='~') str+= "<span class=violetHighlight>"+c+"</span>"; // Commented out for Murder Mystery
+                else if (c=='~') str+= "<span class=violetHighlight>"+c+"</span>"; // Commented out for Murder Mystery
                 else if (c=='@') str+= "<span class=violetHighlightTwo>"+c+"</span>"; // Commented out for Murder Mystery
                 else if (c=='`') str+= "<span class=steelHighlight>"+c+"</span>"; // Commented out for Murder Mystery
                 else str+= c;
