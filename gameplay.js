@@ -36,7 +36,7 @@ var rate = 100;
 if(navigator.appName.indexOf("Microsoft") != -1)
 {
 	ie = true;
-	sp = ' ';
+	sp = 'ï¿½';
 	endl = '<br>';
 }
 
@@ -105,7 +105,7 @@ function pause()
 			stop_loop = -1;
 			clearTimeout(frt);
 			pausebutton = true;
-			pf.innerHTML = getPfString(true);// + getStString(); Commented out the status string for Murder Mystery
+			pf.innerHTML = getPfString(true) + getStString(); // Commented out the status string for Murder Mystery
 		}
 		else
 		{
@@ -251,14 +251,14 @@ function getPfString(paused)
 		{
 			var c = getPfCh(x,y);
 			if (c=='I') str+= "<span class=red>I</span>";
-			//else if (c=='E'||c=='e'||c=='$') str+= "<span class=gold>"+c+"</span>";
+			else if (c=='E'||c=='e'||c=='$') str+= "<span class=gold>"+c+"</span>"; // Commented out for Murder Mystery
 			else if (paused)
             {
 		//Modified for Murder Mystery
                 if (c=='O') str+= "<span class=violetHighlightTwo>"+c+"</span>";
-                //if (c=='~') str+= "<span class=violetHighlight>"+c+"</span>";
-                //else if (c=='@') str+= "<span class=violetHighlightTwo>"+c+"</span>";
-                //else if (c=='`') str+= "<span class=steelHighlight>"+c+"</span>";
+                if (c=='~') str+= "<span class=violetHighlight>"+c+"</span>"; // Commented out for Murder Mystery
+                else if (c=='@') str+= "<span class=violetHighlightTwo>"+c+"</span>"; // Commented out for Murder Mystery
+                else if (c=='`') str+= "<span class=steelHighlight>"+c+"</span>"; // Commented out for Murder Mystery
                 else str+= c;
             }
 			//else if (c=='M'||c=='D'||c=='L'||c=='!') str+= "<span class=red>"+c+"</span>";
@@ -558,7 +558,7 @@ function frameLoop()
 	}
 	frames++;
 	copyA(ar, arp);
-	pf.innerHTML = getPfString(false);// + getStString(); Commented out the status string for Murder Mystery
+	pf.innerHTML = getPfString(false) + getStString(); // Commented out the status string for Murder Mystery
 	if (moneyl == 0)
 	{
 		got_all_money = true;
@@ -734,8 +734,8 @@ function doFrame1()
 			case 0: // Intro Level
 				// Modified for Murder Mystery
 				if (checkpoint == 0 && y == 15 && x == 67) checker = true;
-				//if ((checkpoint == 0 && y == 2 && x == 76) ||
-				//    (checkpoint == 1 && y == 8 && x == 9)) checker = true;
+				if ((checkpoint == 0 && y == 2 && x == 76) || // Commented out for Murder Mystery
+				    (checkpoint == 1 && y == 8 && x == 9)) checker = true; // Commented out for Murder Mystery
 				break;
 			case 1: // Level 1
 				if ((checkpoint == 0 && y == 1 && x == 79) ||
@@ -1257,11 +1257,11 @@ document.onkeydown = function(e)
 	if (q == 'W'.charCodeAt(0) && bugs) speed();
 	if (q == 'E'.charCodeAt(0) && !editing)
 	{
-		//////// Commented out for Murder Mystery
-		//pad.value = resp;
-		//if (!pausebutton) pause();
-		//editing = true;
-		//editor.className = "here";
+		//////// Entire if block commented out for Murder Mystery
+		pad.value = resp;
+		if (!pausebutton) pause();
+		editing = true;
+		editor.className = "here";
 	}
 	if (q == 'Q'.charCodeAt(0))
 	{
