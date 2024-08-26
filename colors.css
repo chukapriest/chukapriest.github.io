@@ -1,0 +1,27 @@
+pre.dead 	{color: #ff0000}
+pre.won 	{color: #00ff00}
+span.red 	{color: #ff0000; font-weight: bold}
+span.brown 	{color: #7e3517; font-weight: bold}
+span.tan	{color: #E18B6B; font-weight: bold}
+span.black	{color: #000000; font-weight: bold}
+span.blue 	{color: #0000ff; font-weight: bold}
+span.lightBlue	{color: #82caff; font-weight: bold}
+span.steel	{color: #728fce; font-weight: bold}
+span.steelHighlight	{color: #728fce; font-weight: bold; background-color:yellow}
+span.gold 	{color: #fdd017; font-weight: bold}
+span.violet 	{color: #7d1b7e; font-weight: bold}
+span.violetHighlight 	{color: #7d1b7e; font-weight: bold; background-color:lime}
+span.violetHighlightTwo 	{color: #7d1b7e; font-weight: bold; background-color:cyan}
+span.lightGreen	{color: #00ff00; font-weight: bold}
+span.darkGreen	{color :#258117; font-weight: bold}
+span.green 	{color: #4cc417}
+span.maroon 	{color: #aa1b17}
+span.purple 	{color: #c031c7}
+span.aqua 	{color: #3b9c9c}
+span.lightAqua	{color: #50ebec}
+span.gray 	{color: #c8bbbe}
+span.gone 	{display: none}
+span.here 	{display: inline}
+#text-frame 	{float: left}
+#list 	   	{position: absolute; left: 700px}
+#banner 	{border: 2px solid Black; text-align: center; font-size: 3em; height: 54px}
